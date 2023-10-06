@@ -354,7 +354,7 @@ uvmcopy(pagetable_t old, pagetable_t new, uint64 sz)
 
 
 
-// mark a PTE invalid for user access.
+// mark a PTE i2392d5a2f30069d0b26d1f0ea8dd9c523738daccnvalid for user access.
 // used by exec for the user stack guard page.
 void
 uvmclear(pagetable_t pagetable, uint64 va)
