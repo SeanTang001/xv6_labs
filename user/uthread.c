@@ -84,7 +84,6 @@ thread_schedule(void)
      * Invoke thread_switch to switch from t to next_thread:
      * thread_switch(??, ??);
      */
-    printf("switching threads\n");
     thread_switch(&(t->context), &(next_thread->context));
 
 
