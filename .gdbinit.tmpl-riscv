@@ -4,3 +4,9 @@ target remote 127.0.0.1:1234
 symbol-file kernel/kernel
 set disassemble-next-line auto
 set riscv use-compressed-breakpoints yes
+tui new-layout example {-horizontal regs 1 src 2 } 1 status 1 cmd 1
+layout example
+tui reg general
+break e1000_recv
+break ping
+file ./user/_nettests
